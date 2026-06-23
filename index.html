@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartik Sharma | Advocate &amp; Legal Counsel</title>
+<meta name="description" content="Kartik Sharma, Advocate — practicing law across civil, criminal, corporate, family, property and contract matters. Trusted legal counsel in India.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          navy: { 950:'#0a1530', 900:'#0F1B3D', 800:'#16265a', 700:'#1E3A8A', 600:'#1E40AF' },
+          gold: { 500:'#B45309', 400:'#D97706', 300:'#E8A33D' },
+        },
+        fontFamily: {
+          serif: ['EB Garamond','Georgia','serif'],
+          sans: ['Lato','system-ui','sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Lato', sans-serif; }
+  .font-serif { font-family: 'EB Garamond', serif; }
+  ::selection { background-color: #B45309; color: white; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+  .badge-shimmer { position: relative; overflow: hidden; }
+  .badge-shimmer::after {
+    content: ''; position: absolute; top: 0; left: -150%; width: 60%; height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.18), transparent);
+    transform: skewX(-20deg);
+  }
+  .badge-shimmer:hover::after { left: 150%; transition: left 0.7s ease; }
+
+  .stat-num { font-variant-numeric: tabular-nums; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 8px; }
+  .dark ::-webkit-scrollbar-thumb { background: #475569; }
+</style>
+</head>
+
+<body class="bg-slate-50 dark:bg-navy-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+
+<!-- Skip link -->
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 bg-gold-500 text-white px-4 py-2 rounded">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="fixed top-4 left-4 right-4 z-50 mx-auto max-w-6xl">
+  <nav class="flex items-center justify-between gap-4 rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white/80 dark:bg-navy-900/80 backdrop-blur-md shadow-lg shadow-slate-900/5 px-5 py-3">
+    <a href="#home" class="flex items-center gap-2 group">
+      <span class="flex items-center justify-center w-10 h-10 rounded-full bg-navy-700 dark:bg-gold-500 text-white font-serif text-lg font-semibold transition-colors">KS</span>
+      <span class="hidden sm:block">
+        <span class="block font-serif text-lg font-semibold leading-tight text-navy-900 dark:text-white">Kartik Sharma</span>
+        <span class="block text-[11px] uppercase tracking-widest text-slate-500 dark:text-slate-400">Advocate-at-Law</span>
+      </span>
+    </a>
+
+    <ul class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-700 dark:text-slate-200">
+      <li><a href="#practice" class="hover:text-gold-500 transition-colors duration-200">Practice Areas</a></li>
+      <li><a href="#about" class="hover:text-gold-500 transition-colors duration-200">About</a></li>
+      <li><a href="#results" class="hover:text-gold-500 transition-colors duration-200">Results</a></li>
+      <li><a href="#testimonials" class="hover:text-gold-500 transition-colors duration-200">Testimonials</a></li>
+      <li><a href="#blog" class="hover:text-gold-500 transition-colors duration-200">Insights</a></li>
+      <li><a href="#contact" class="hover:text-gold-500 transition-colors duration-200">Contact</a></li>
+    </ul>
+
+    <div class="flex items-center gap-3">
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" class="cursor-pointer w-10 h-10 flex items-center justify-center rounded-full border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/10 transition-colors duration-200">
+        <svg id="icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg id="icon-moon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+
+      <a href="https://wa.me/911234567890?text=Hello%20Advocate%20Kartik%20Sharma%2C%20I%20would%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 cursor-pointer rounded-xl bg-navy-700 dark:bg-gold-500 hover:bg-navy-800 dark:hover:bg-gold-400 text-white text-sm font-semibold px-4 py-2.5 transition-colors duration-200">
+        Book Consultation
+      </a>
+
+      <button id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" class="lg:hidden cursor-pointer w-10 h-10 flex items-center justify-center rounded-full border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-200">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- mobile menu -->
+  <div id="mobile-menu" class="hidden lg:hidden mt-2 rounded-2xl border border-slate-200/70 dark:border-white/10 bg-white/95 dark:bg-navy-900/95 backdrop-blur-md shadow-lg px-5 py-4">
+    <ul class="flex flex-col gap-4 text-sm font-medium text-slate-700 dark:text-slate-200">
+      <li><a href="#practice" class="block hover:text-gold-500">Practice Areas</a></li>
+      <li><a href="#about" class="block hover:text-gold-500">About</a></li>
+      <li><a href="#results" class="block hover:text-gold-500">Results</a></li>
+      <li><a href="#testimonials" class="block hover:text-gold-500">Testimonials</a></li>
+      <li><a href="#blog" class="block hover:text-gold-500">Insights</a></li>
+      <li><a href="#contact" class="block hover:text-gold-500">Contact</a></li>
+      <li><a href="https://wa.me/911234567890" target="_blank" rel="noopener" class="block text-center rounded-xl bg-navy-700 dark:bg-gold-500 text-white font-semibold px-4 py-2.5">Book Consultation</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main" class="pt-32">
+
+<!-- ============ HERO ============ -->
+<section id="home" class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950 dark:from-navy-950 dark:via-navy-900 dark:to-navy-950"></div>
+  <div class="absolute inset-0 -z-10 opacity-[0.07]" style="background-image:radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 28px 28px;"></div>
+
+  <div class="relative max-w-6xl mx-auto px-5 sm:px-8 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <p class="inline-flex items-center gap-2 text-gold-300 text-xs font-semibold uppercase tracking-[0.2em] mb-5">
+        <span class="w-2 h-2 rounded-full bg-gold-400"></span> Enrolled Advocate — Bar Council of India
+      </p>
+      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-white">
+        Steadfast Legal Counsel,<br class="hidden sm:block"> Built on <span class="text-gold-300">Trust</span> &amp; Results.
+      </h1>
+      <p class="mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
+        Kartik Sharma is a practicing Advocate handling Civil &amp; Criminal Litigation, Corporate Law, Family Disputes, Property Matters, Contract Drafting and Cheque Bounce Cases — with a decade of courtroom-tested experience across Indian courts and tribunals.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="https://wa.me/911234567890" target="_blank" rel="noopener" class="cursor-pointer inline-flex items-center gap-2 rounded-xl bg-gold-500 hover:bg-gold-400 text-white font-semibold px-6 py-3.5 transition-colors duration-200 shadow-lg shadow-gold-500/20">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.03 4a8.94 8.94 0 0 0-7.74 13.4l-1 3.67 3.76-1a8.93 8.93 0 0 0 4.98 1.51h.01a8.94 8.94 0 0 0 8.93-8.93 8.86 8.86 0 0 0-2.37-6.33ZM12.03 19.9h-.01a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.81.74.75-2.74-.18-.28a7.4 7.4 0 1 1 13.7-3.94 7.4 7.4 0 0 1-7.4 7.42Zm4.06-5.55c-.22-.11-1.3-.64-1.5-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.86-.13.15-.26.16-.48.05-.22-.11-.93-.34-1.77-1.09-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.11-.11.25-.29.37-.43.12-.15.16-.25.24-.41.08-.15.04-.29-.03-.41-.07-.11-.6-1.45-.82-1.99-.22-.52-.44-.45-.6-.46-.16-.01-.34-.01-.52-.01-.18 0-.46.07-.7.34-.24.27-.92.9-.92 2.2 0 1.3.94 2.55 1.07 2.73.13.18 1.83 2.8 4.44 3.81.62.24 1.1.38 1.48.49.62.18 1.19.16 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.07-.11-.22-.16-.44-.27Z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <a href="#contact" class="cursor-pointer inline-flex items-center gap-2 rounded-xl border border-white/20 hover:border-white/40 text-white font-semibold px-6 py-3.5 transition-colors duration-200">
+          Schedule Consultation
+        </a>
+      </div>
+
+      <div class="mt-12 grid grid-cols-3 gap-6 max-w-md">
+        <div>
+          <p class="font-serif text-3xl font-semibold text-white stat-num"><span data-count="12">0</span>+</p>
+          <p class="text-xs text-slate-400 mt-1">Years of Practice</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl font-semibold text-white stat-num"><span data-count="450">0</span>+</p>
+          <p class="text-xs text-slate-400 mt-1">Cases Handled</p>
+        </div>
+        <div>
+          <p class="font-serif text-3xl font-semibold text-white stat-num"><span data-count="96">0</span>%</p>
+          <p class="text-xs text-slate-400 mt-1">Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal relative">
+      <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=900&auto=format&fit=crop" alt="Advocate Kartik Sharma in professional courtroom attire" class="w-full h-[460px] object-cover" loading="eager" width="900" height="460">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
+        <div class="absolute bottom-5 left-5 right-5 flex items-center justify-between rounded-xl bg-white/10 backdrop-blur-md border border-white/15 px-4 py-3">
+          <div>
+            <p class="text-white font-semibold text-sm">Kartik Sharma</p>
+            <p class="text-slate-300 text-xs">Advocate, Delhi High Court</p>
+          </div>
+          <svg class="w-7 h-7 text-gold-300" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 7v2h22V7L12 2Zm-7 9v8h2v-8H5Zm5 0v8h2v-8h-2Zm5 0v8h2v-8h-2ZM2 21h20v-2H2v2Z"/></svg>
+        </div>
+      </div>
+      <div class="badge-shimmer absolute -top-6 -right-6 hidden sm:flex flex-col items-center justify-center w-28 h-28 rounded-full bg-gold-500 text-white shadow-xl border-4 border-navy-950">
+        <span class="font-serif text-2xl font-bold">A+</span>
+        <span class="text-[10px] uppercase tracking-wide text-center px-2">Client Rated</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="border-y border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-slate-500 dark:text-slate-400 text-sm font-medium">
+    <span class="flex items-center gap-2"><svg class="w-5 h-5 text-navy-700 dark:text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg> Bar Council of Delhi</span>
+    <span class="flex items-center gap-2"><svg class="w-5 h-5 text-navy-700 dark:text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1"/></svg> Delhi High Court Practice</span>
+    <span class="flex items-center gap-2"><svg class="w-5 h-5 text-navy-700 dark:text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M12.5 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg> 450+ Clients Represented</span>
+    <span class="flex items-center gap-2"><svg class="w-5 h-5 text-navy-700 dark:text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg> 4.9/5 Client Rating</span>
+  </div>
+</section>
+
+<!-- ============ PRACTICE AREAS ============ -->
+<section id="practice" class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+  <div class="max-w-2xl reveal">
+    <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">Practice Areas</p>
+    <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">Diverse Legal Expertise, One Trusted Advocate</h2>
+    <p class="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">From boardroom contracts to courtroom litigation, every matter is handled with precision, discretion and a results-first approach.</p>
+  </div>
+
+  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <article class="reveal group rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      <div class="w-12 h-12 rounded-xl bg-navy-700/10 dark:bg-gold-500/10 flex items-center justify-center text-navy-700 dark:text-gold-400 mb-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m-7 8 2 2 4-4"/></svg>
+      </div>
+      <h3 class="font-serif text-xl font-semibold text-navy-900 dark:text-white">Civil &amp; Criminal Litigation</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Representation before trial courts, sessions courts and High Court in civil suits, bail matters, and criminal defense.</p>
+    </article>
+
+    <article class="reveal group rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      <div class="w-12 h-12 rounded-xl bg-navy-700/10 dark:bg-gold-500/10 flex items-center justify-center text-navy-700 dark:text-gold-400 mb-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1"/></svg>
+      </div>
+      <h3 class="font-serif text-xl font-semibold text-navy-900 dark:text-white">Corporate &amp; Business Law</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Company incorporation, regulatory compliance, commercial disputes, and corporate governance advisory.</p>
+    </article>
+
+    <article class="reveal group rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      <div class="w-12 h-12 rounded-xl bg-navy-700/10 dark:bg-gold-500/10 flex items-center justify-center text-navy-700 dark:text-gold-400 mb-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg>
+      </div>
+      <h3 class="font-serif text-xl font-semibold text-navy-900 dark:text-white">Family Law</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Divorce, child custody, maintenance and matrimonial dispute resolution handled with sensitivity and discretion.</p>
+    </article>
+
+    <article class="reveal group rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      <div class="w-12 h-12 rounded-xl bg-navy-700/10 dark:bg-gold-500/10 flex items-center justify-center text-navy-700 dark:text-gold-400 mb-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9.5 12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V9.5Z"/></svg>
+      </div>
+      <h3 class="font-serif text-xl font-semibold text-navy-900 dark:text-white">Property &amp; Real Estate</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Title verification, sale deed drafting, property disputes, and RERA-related litigation and advisory.</p>
+    </article>
+
+    <article class="reveal group rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      <div class="w-12 h-12 rounded-xl bg-navy-700/10 dark:bg-gold-500/10 flex items-center justify-center text-navy-700 dark:text-gold-400 mb-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m-7 5h8a2 2 0 0 0 2-2V7.41a2 2 0 0 0-.59-1.42l-3.4-3.4A2 2 0 0 0 12.6 2H7a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2Z"/></svg>
+      </div>
+      <h3 class="font-serif text-xl font-semibold text-navy-900 dark:text-white">Contract Drafting</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Drafting and vetting of agreements, NDAs, partnership deeds and commercial contracts to safeguard your interests.</p>
+    </article>
+
+    <article class="reveal group rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-7 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+      <div class="w-12 h-12 rounded-xl bg-navy-700/10 dark:bg-gold-500/10 flex items-center justify-center text-navy-700 dark:text-gold-400 mb-5">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h2m4 0h4M5 6h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/></svg>
+      </div>
+      <h3 class="font-serif text-xl font-semibold text-navy-900 dark:text-white">Cheque Bounce Cases</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Section 138 NI Act proceedings — notices, complaints, and representation for dishonoured cheque recovery.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="bg-white dark:bg-navy-900 border-y border-slate-200 dark:border-white/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal relative">
+      <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop" alt="Advocate Kartik Sharma reviewing case documents in his chambers" class="rounded-2xl w-full h-[420px] object-cover shadow-xl" loading="lazy" width="800" height="420">
+      <div class="absolute -bottom-6 -left-6 hidden sm:block rounded-2xl bg-navy-900 dark:bg-gold-500 text-white px-6 py-5 shadow-xl">
+        <p class="font-serif text-2xl font-bold">12+ Yrs</p>
+        <p class="text-xs text-slate-300 dark:text-navy-900/80">Courtroom Experience</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">About the Advocate</p>
+      <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">Kartik Sharma</h2>
+      <p class="mt-5 text-slate-600 dark:text-slate-400 leading-relaxed">
+        Kartik Sharma is an enrolled Advocate with the Bar Council of Delhi, practicing before the District Courts and the Delhi High Court. Over twelve years of practice, he has built a reputation for meticulous case preparation, clear client communication, and a pragmatic approach to dispute resolution — whether in the courtroom or at the negotiation table.
+      </p>
+      <p class="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+        His practice spans civil and criminal litigation, corporate advisory, family law, property disputes, contract drafting, and cheque dishonour proceedings — giving clients a single, trusted point of contact across legal needs.
+      </p>
+
+      <div class="mt-8 grid sm:grid-cols-2 gap-4">
+        <div class="flex items-start gap-3 rounded-xl border border-slate-200 dark:border-white/10 p-4">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M22 10v6M2 10l10-5 10 5-10 5-10-5Zm4 2v5c3 2 7 2 10 0v-5"/></svg>
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">LL.B., Faculty of Law</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">University of Delhi</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 rounded-xl border border-slate-200 dark:border-white/10 p-4">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg>
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">Bar Council Enrolled</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Reg. No. D/1234/2013</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 rounded-xl border border-slate-200 dark:border-white/10 p-4">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14"/></svg>
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">Delhi High Court</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Practicing Advocate</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 rounded-xl border border-slate-200 dark:border-white/10 p-4">
+          <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">Bar Association Member</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Delhi Bar Association</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS / CASE METRICS ============ -->
+<section id="results" class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+  <div class="max-w-2xl reveal">
+    <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">Track Record</p>
+    <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">Results That Speak for Themselves</h2>
+  </div>
+
+  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="reveal rounded-2xl bg-navy-900 dark:bg-navy-900 text-white p-7 border border-white/5">
+      <p class="font-serif text-4xl font-bold text-gold-300 stat-num"><span data-count="450">0</span>+</p>
+      <p class="mt-2 text-sm text-slate-300">Cases Successfully Handled</p>
+    </div>
+    <div class="reveal rounded-2xl bg-navy-900 dark:bg-navy-900 text-white p-7 border border-white/5">
+      <p class="font-serif text-4xl font-bold text-gold-300 stat-num"><span data-count="92">0</span>%</p>
+      <p class="mt-2 text-sm text-slate-300">Favourable Case Outcomes</p>
+    </div>
+    <div class="reveal rounded-2xl bg-navy-900 dark:bg-navy-900 text-white p-7 border border-white/5">
+      <p class="font-serif text-4xl font-bold text-gold-300 stat-num"><span data-count="12">0</span>+</p>
+      <p class="mt-2 text-sm text-slate-300">Years at the Bar</p>
+    </div>
+    <div class="reveal rounded-2xl bg-navy-900 dark:bg-navy-900 text-white p-7 border border-white/5">
+      <p class="font-serif text-4xl font-bold text-gold-300 stat-num"><span data-count="24">0</span>h</p>
+      <p class="mt-2 text-sm text-slate-300">Avg. Response Time</p>
+    </div>
+  </div>
+
+  <div class="mt-8 grid lg:grid-cols-3 gap-6">
+    <article class="reveal rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="inline-block text-xs font-semibold uppercase tracking-wide text-gold-500 bg-gold-500/10 rounded-full px-3 py-1">Property Dispute</span>
+      <h3 class="font-serif text-lg font-semibold mt-4 text-navy-900 dark:text-white">Title Dispute Resolved in Client's Favour</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Secured a favourable settlement in a contested ancestral property matter spanning multiple co-owners, restoring clear title within 8 months.</p>
+    </article>
+    <article class="reveal rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="inline-block text-xs font-semibold uppercase tracking-wide text-gold-500 bg-gold-500/10 rounded-full px-3 py-1">Cheque Bounce</span>
+      <h3 class="font-serif text-lg font-semibold mt-4 text-navy-900 dark:text-white">Full Recovery Under Section 138</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Secured complete recovery of dishonoured cheque amount plus compensation for a small business client within 5 months of filing.</p>
+    </article>
+    <article class="reveal rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="inline-block text-xs font-semibold uppercase tracking-wide text-gold-500 bg-gold-500/10 rounded-full px-3 py-1">Family Law</span>
+      <h3 class="font-serif text-lg font-semibold mt-4 text-navy-900 dark:text-white">Amicable Divorce Settlement</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Negotiated a mutual consent divorce with fair custody and maintenance terms, avoiding prolonged litigation for both parties.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="bg-white dark:bg-navy-900 border-y border-slate-200 dark:border-white/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+    <div class="max-w-2xl reveal">
+      <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">Client Testimonials</p>
+      <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">What Clients Say</h2>
+    </div>
+
+    <div class="mt-12 grid lg:grid-cols-3 gap-6">
+      <figure class="reveal rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-white/10 p-7">
+        <div class="flex gap-1 text-gold-500 mb-4" aria-hidden="true">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+        </div>
+        <blockquote class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">"Mr. Sharma handled our property dispute with great professionalism. He explained every step clearly and kept us informed throughout. Highly recommended."</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=100&auto=format&fit=crop" alt="" class="w-10 h-10 rounded-full object-cover" loading="lazy" width="40" height="40">
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">Rajesh Mehta</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Property Client</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-white/10 p-7">
+        <div class="flex gap-1 text-gold-500 mb-4" aria-hidden="true">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+        </div>
+        <blockquote class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">"We engaged Kartik for drafting our partnership agreement. Thorough, prompt, and detail-oriented — exactly what a growing business needs."</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=100&auto=format&fit=crop" alt="" class="w-10 h-10 rounded-full object-cover" loading="lazy" width="40" height="40">
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">Anita Verma</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Business Owner</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="reveal rounded-2xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-white/10 p-7">
+        <div class="flex gap-1 text-gold-500 mb-4" aria-hidden="true">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27Z"/></svg>
+        </div>
+        <blockquote class="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">"A difficult family matter handled with empathy and discretion. He fought hard for a fair outcome and always responded promptly to our concerns."</blockquote>
+        <figcaption class="mt-5 flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" alt="" class="w-10 h-10 rounded-full object-cover" loading="lazy" width="40" height="40">
+          <div>
+            <p class="text-sm font-semibold text-navy-900 dark:text-white">Sunita Rao</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">Family Law Client</p>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+  <div class="max-w-2xl reveal">
+    <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">How It Works</p>
+    <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">A Clear Path From Consultation to Resolution</h2>
+  </div>
+
+  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="reveal relative rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="font-serif text-3xl font-bold text-gold-500/30">01</span>
+      <h3 class="font-serif text-lg font-semibold mt-3 text-navy-900 dark:text-white">Initial Consultation</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Share your matter via call, WhatsApp or the contact form for a confidential first review.</p>
+    </div>
+    <div class="reveal relative rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="font-serif text-3xl font-bold text-gold-500/30">02</span>
+      <h3 class="font-serif text-lg font-semibold mt-3 text-navy-900 dark:text-white">Case Assessment</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">A thorough review of documents and facts to outline your legal options and likely strategy.</p>
+    </div>
+    <div class="reveal relative rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="font-serif text-3xl font-bold text-gold-500/30">03</span>
+      <h3 class="font-serif text-lg font-semibold mt-3 text-navy-900 dark:text-white">Action &amp; Representation</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Filing, negotiation, or courtroom representation — with regular updates at every stage.</p>
+    </div>
+    <div class="reveal relative rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-6">
+      <span class="font-serif text-3xl font-bold text-gold-500/30">04</span>
+      <h3 class="font-serif text-lg font-semibold mt-3 text-navy-900 dark:text-white">Resolution</h3>
+      <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Working toward the most favourable, timely outcome for your case or transaction.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / INSIGHTS ============ -->
+<section id="blog" class="bg-white dark:bg-navy-900 border-y border-slate-200 dark:border-white/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+    <div class="flex flex-wrap items-end justify-between gap-4 reveal">
+      <div class="max-w-2xl">
+        <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">Legal Insights</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">Articles &amp; Legal Updates</h2>
+      </div>
+      <a href="#" class="cursor-pointer text-sm font-semibold text-navy-700 dark:text-gold-400 hover:underline">View all articles →</a>
+    </div>
+
+    <div class="mt-12 grid lg:grid-cols-3 gap-6">
+      <article class="reveal rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600&auto=format&fit=crop" alt="Gavel and legal documents on a desk" class="w-full h-44 object-cover" loading="lazy" width="600" height="176">
+        <div class="p-6">
+          <span class="text-xs font-semibold uppercase tracking-wide text-gold-500">Cheque Bounce</span>
+          <h3 class="font-serif text-lg font-semibold mt-2 text-navy-900 dark:text-white">Section 138 NI Act: What to Do When a Cheque Bounces</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">A practical guide to timelines, notices and remedies available to the payee.</p>
+        </div>
+      </article>
+      <article class="reveal rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600&auto=format&fit=crop" alt="Two people signing a contract" class="w-full h-44 object-cover" loading="lazy" width="600" height="176">
+        <div class="p-6">
+          <span class="text-xs font-semibold uppercase tracking-wide text-gold-500">Contracts</span>
+          <h3 class="font-serif text-lg font-semibold mt-2 text-navy-900 dark:text-white">5 Clauses Every Business Contract Must Have</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Avoid costly disputes by getting these essential contract clauses right from the start.</p>
+        </div>
+      </article>
+      <article class="reveal rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=600&auto=format&fit=crop" alt="Family discussing documents with an advisor" class="w-full h-44 object-cover" loading="lazy" width="600" height="176">
+        <div class="p-6">
+          <span class="text-xs font-semibold uppercase tracking-wide text-gold-500">Family Law</span>
+          <h3 class="font-serif text-lg font-semibold mt-2 text-navy-900 dark:text-white">Mutual Consent Divorce in India: A Step-by-Step Guide</h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">Understanding the process, timelines and documentation for an amicable separation.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="max-w-4xl mx-auto px-5 sm:px-8 py-20 lg:py-28">
+  <div class="text-center reveal">
+    <p class="text-gold-500 text-sm font-semibold uppercase tracking-widest">FAQs</p>
+    <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-navy-900 dark:text-white">Common Questions</h2>
+  </div>
+
+  <div class="mt-10 space-y-3">
+    <details class="reveal group rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-semibold text-navy-900 dark:text-white cursor-pointer list-none">
+        How do I book an initial consultation?
+        <svg class="w-5 h-5 text-gold-500 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
+      </summary>
+      <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">You can book a consultation via the WhatsApp button, the contact form below, or by calling the office directly. Initial consultations are confidential.</p>
+    </details>
+    <details class="reveal group rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-semibold text-navy-900 dark:text-white cursor-pointer list-none">
+        Which courts does Advocate Sharma practice in?
+        <svg class="w-5 h-5 text-gold-500 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
+      </summary>
+      <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Primarily the Delhi District Courts and the Delhi High Court, with select matters before tribunals depending on case requirements.</p>
+    </details>
+    <details class="reveal group rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-semibold text-navy-900 dark:text-white cursor-pointer list-none">
+        What documents should I bring to my first meeting?
+        <svg class="w-5 h-5 text-gold-500 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
+      </summary>
+      <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Bring any relevant agreements, notices, correspondence, identity proof and a brief written timeline of events related to your matter.</p>
+    </details>
+    <details class="reveal group rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-navy-900 p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-semibold text-navy-900 dark:text-white cursor-pointer list-none">
+        Are fees discussed upfront?
+        <svg class="w-5 h-5 text-gold-500 transition-transform duration-200 group-open:rotate-45" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
+      </summary>
+      <p class="mt-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Yes. Fee structure and scope of work are discussed transparently before any engagement begins, with no hidden charges.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CONTACT / CTA ============ -->
+<section id="contact" class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10 bg-navy-950"></div>
+  <div class="absolute inset-0 -z-10 opacity-[0.06]" style="background-image:radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 28px 28px;"></div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="reveal">
+      <p class="text-gold-300 text-sm font-semibold uppercase tracking-widest">Get In Touch</p>
+      <h2 class="font-serif text-3xl sm:text-4xl font-semibold mt-3 text-white">Schedule Your Confidential Consultation</h2>
+      <p class="mt-4 text-slate-300 leading-relaxed max-w-md">Reach out today and discuss your legal matter directly with Advocate Kartik Sharma. Responses typically within 24 hours.</p>
+
+      <div class="mt-8 space-y-4 text-slate-200">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-gold-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2.28a1 1 0 0 1 .97.76l1 4a1 1 0 0 1-.27.95L7.5 10.18a11 11 0 0 0 6.32 6.32l1.47-1.48a1 1 0 0 1 .95-.27l4 1a1 1 0 0 1 .76.97V19a2 2 0 0 1-2 2h-1C9.16 21 3 14.84 3 7V5Z"/></svg></span>
+          <a href="tel:+911234567890" class="cursor-pointer hover:text-gold-300 transition-colors">+91 12345 67890</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-gold-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg></span>
+          <a href="mailto:contact@kartiksharmaadvocate.in" class="cursor-pointer hover:text-gold-300 transition-colors">contact@kartiksharmaadvocate.in</a>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-gold-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span>Chamber No. 214, Patiala House Courts, New Delhi</span>
+        </div>
+      </div>
+
+      <a href="https://wa.me/911234567890" target="_blank" rel="noopener" class="mt-8 cursor-pointer inline-flex items-center gap-2 rounded-xl bg-gold-500 hover:bg-gold-400 text-white font-semibold px-6 py-3.5 transition-colors duration-200">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.03 4a8.94 8.94 0 0 0-7.74 13.4l-1 3.67 3.76-1a8.93 8.93 0 0 0 4.98 1.51h.01a8.94 8.94 0 0 0 8.93-8.93 8.86 8.86 0 0 0-2.37-6.33ZM12.03 19.9h-.01a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.81.74.75-2.74-.18-.28a7.4 7.4 0 1 1 13.7-3.94 7.4 7.4 0 0 1-7.4 7.42Z"/></svg>
+        Message on WhatsApp
+      </a>
+    </div>
+
+    <form id="contact-form" class="reveal rounded-2xl bg-white dark:bg-navy-900 p-7 sm:p-8 shadow-2xl" novalidate>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Full Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" class="w-full rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-navy-950 text-slate-900 dark:text-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors duration-200" placeholder="Your full name">
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Phone Number</label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel" class="w-full rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-navy-950 text-slate-900 dark:text-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors duration-200" placeholder="+91 00000 00000">
+        </div>
+      </div>
+      <div class="mt-5">
+        <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Email Address</label>
+        <input id="email" name="email" type="email" required autocomplete="email" class="w-full rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-navy-950 text-slate-900 dark:text-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors duration-200" placeholder="you@example.com">
+      </div>
+      <div class="mt-5">
+        <label for="practice-area" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Area of Concern</label>
+        <select id="practice-area" name="practice-area" class="w-full rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-navy-950 text-slate-900 dark:text-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors duration-200">
+          <option>Civil & Criminal Litigation</option>
+          <option>Corporate & Business Law</option>
+          <option>Family Law</option>
+          <option>Property & Real Estate</option>
+          <option>Contract Drafting</option>
+          <option>Cheque Bounce Case</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="mt-5">
+        <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Brief Description</label>
+        <textarea id="message" name="message" rows="4" required class="w-full rounded-lg border border-slate-300 dark:border-white/10 bg-white dark:bg-navy-950 text-slate-900 dark:text-white px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors duration-200 resize-none" placeholder="Briefly describe your legal matter..."></textarea>
+      </div>
+      <p id="form-error" class="hidden mt-3 text-sm text-red-600 dark:text-red-400" role="alert"></p>
+      <button type="submit" id="submit-btn" class="cursor-pointer mt-6 w-full rounded-lg bg-navy-700 dark:bg-gold-500 hover:bg-navy-800 dark:hover:bg-gold-400 text-white font-semibold py-3 transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+        <span id="submit-text">Send Inquiry</span>
+      </button>
+      <p id="form-success" class="hidden mt-3 text-sm text-emerald-600 dark:text-emerald-400" role="status">Thank you — your inquiry has been received. We'll be in touch within 24 hours.</p>
+      <p class="mt-4 text-xs text-slate-500 dark:text-slate-500">All consultations are kept strictly confidential.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-950 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="flex items-center justify-center w-9 h-9 rounded-full bg-gold-500 text-white font-serif text-sm font-semibold">KS</span>
+        <span class="font-serif text-lg font-semibold text-white">Kartik Sharma</span>
+      </div>
+      <p class="text-sm text-slate-400 leading-relaxed">Advocate-at-Law practicing across civil, criminal, corporate, family and property matters in New Delhi.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold text-sm mb-4">Practice Areas</h4>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#practice" class="hover:text-gold-300 transition-colors cursor-pointer">Civil & Criminal Litigation</a></li>
+        <li><a href="#practice" class="hover:text-gold-300 transition-colors cursor-pointer">Corporate & Business Law</a></li>
+        <li><a href="#practice" class="hover:text-gold-300 transition-colors cursor-pointer">Family Law</a></li>
+        <li><a href="#practice" class="hover:text-gold-300 transition-colors cursor-pointer">Property & Real Estate</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold text-sm mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#about" class="hover:text-gold-300 transition-colors cursor-pointer">About</a></li>
+        <li><a href="#testimonials" class="hover:text-gold-300 transition-colors cursor-pointer">Testimonials</a></li>
+        <li><a href="#blog" class="hover:text-gold-300 transition-colors cursor-pointer">Legal Insights</a></li>
+        <li><a href="#contact" class="hover:text-gold-300 transition-colors cursor-pointer">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold text-sm mb-4">Connect</h4>
+      <div class="flex gap-3">
+        <a href="https://wa.me/911234567890" target="_blank" rel="noopener" aria-label="WhatsApp" class="cursor-pointer w-9 h-9 rounded-full bg-white/10 hover:bg-gold-500 flex items-center justify-center transition-colors duration-200">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.03 4a8.94 8.94 0 0 0-7.74 13.4l-1 3.67 3.76-1a8.93 8.93 0 0 0 4.98 1.51h.01a8.94 8.94 0 0 0 8.93-8.93 8.86 8.86 0 0 0-2.37-6.33Z"/></svg>
+        </a>
+        <a href="mailto:contact@kartiksharmaadvocate.in" aria-label="Email" class="cursor-pointer w-9 h-9 rounded-full bg-white/10 hover:bg-gold-500 flex items-center justify-center transition-colors duration-200">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+        </a>
+        <a href="tel:+911234567890" aria-label="Call" class="cursor-pointer w-9 h-9 rounded-full bg-white/10 hover:bg-gold-500 flex items-center justify-center transition-colors duration-200">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 0 1 2-2h2.28a1 1 0 0 1 .97.76l1 4a1 1 0 0 1-.27.95L7.5 10.18a11 11 0 0 0 6.32 6.32l1.47-1.48a1 1 0 0 1 .95-.27l4 1a1 1 0 0 1 .76.97V19a2 2 0 0 1-2 2h-1C9.16 21 3 14.84 3 7V5Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 max-w-6xl mx-auto px-5 sm:px-8 py-6 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+    <p>&copy; 2026 Kartik Sharma, Advocate. All rights reserved.</p>
+    <p>Bar Council Reg. No. D/1234/2013 — Advocates' Act, 1961</p>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="back-to-top" aria-label="Back to top" class="hidden fixed bottom-6 right-6 z-40 cursor-pointer w-11 h-11 rounded-full bg-navy-700 dark:bg-gold-500 text-white shadow-lg flex items-center justify-center transition-all duration-200 hover:scale-105">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script>
+  // ---------- Theme toggle ----------
+  const root = document.documentElement;
+  const sunIcon = document.getElementById('icon-sun');
+  const moonIcon = document.getElementById('icon-moon');
+  const themeToggle = document.getElementById('theme-toggle');
+
+  function applyTheme(isDark) {
+    root.classList.toggle('dark', isDark);
+    sunIcon.classList.toggle('hidden', !isDark);
+    moonIcon.classList.toggle('hidden', isDark);
+  }
+
+  const stored = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(stored ? stored === 'dark' : prefersDark);
+
+  themeToggle.addEventListener('click', () => {
+    const isDark = !root.classList.contains('dark');
+    applyTheme(isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
+  // ---------- Mobile menu ----------
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    menuToggle.setAttribute('aria-expanded', String(!isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+  // ---------- Reveal on scroll ----------
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal');
+  if (reduceMotion) {
+    revealEls.forEach(el => el.classList.add('in-view'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  // ---------- Counter animation ----------
+  const counters = document.querySelectorAll('[data-count]');
+  function animateCounter(el) {
+    const target = parseInt(el.getAttribute('data-count'), 10);
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      el.textContent = Math.floor(progress * target);
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    }
+    if (reduceMotion) el.textContent = target;
+    else requestAnimationFrame(tick);
+  }
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterIO.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(el => counterIO.observe(el));
+
+  // ---------- Back to top ----------
+  const backToTop = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('hidden', window.scrollY < 500);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' }));
+
+  // ---------- Contact form (client-side validation, no backend) ----------
+  const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('submit-btn');
+  const submitText = document.getElementById('submit-text');
+  const formError = document.getElementById('form-error');
+  const formSuccess = document.getElementById('form-success');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formError.classList.add('hidden');
+    formSuccess.classList.add('hidden');
+
+    if (!form.checkValidity()) {
+      formError.textContent = 'Please fill in all required fields with valid information.';
+      formError.classList.remove('hidden');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitText.textContent = 'Sending...';
+
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitText.textContent = 'Send Inquiry';
+      formSuccess.classList.remove('hidden');
+      form.reset();
+    }, 900);
+  });
+</script>
+
+</body>
+</html>
